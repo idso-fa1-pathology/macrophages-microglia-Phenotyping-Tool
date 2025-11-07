@@ -1,2 +1,2 @@
-iba1_count,nuclei_count,nuclei_in_iba1_count,tcell_count,avg_nuclei_per_iba1,qki_background,avg_nuclear_qki,avg_cyto_qki,avg_nc_ratio,processing_time,morphology_counts,artifacts_removed
-366,1259,318,61,0.8688524590163934,0.0,27.797459932316006,18.892839612947437,1.9658052484942294,11.9235360622406,"{'ameboid': 70, 'rod': 186, 'ramified': 18, 'hyperramified': 72, 'artifact': 20}",20
+iba1_count,nuclei_count,nuclei_in_iba1_count,avg_nuclei_per_iba1,qki_background,avg_nuclear_qki,avg_cyto_qki,avg_nc_ratio,processing_time,morphology_counts,artifacts_removed
+366,1259,318,0.8688524590163934,0.0,27.797459932316006,18.892839612947437,1.9658052484942294,10.717644214630127,"{'ameboid': 70, 'rod': 186, 'ramified': 18, 'hyperramified': 72, 'artifact': 20}",20

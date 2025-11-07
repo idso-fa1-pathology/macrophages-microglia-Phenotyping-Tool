@@ -1,14 +1,12 @@
 """
 Test script to validate README instructions work correctly
 """
-
 from cell_analysis import main
 import os
 import sys
 
 def test_readme_example():
     """Test the exact Quick Start example from README"""
-    
     print("=" * 60)
     print("Testing README Quick Start Example")
     print("=" * 60)
@@ -31,17 +29,15 @@ def test_readme_example():
         results = main(
             image_path=image_path,
             output_dir=output_dir,
-            qki_channel=1,      # QKI protein
-            iba1_channel=2,     # Microglia marker (IBA1)
             dapi_channel=0,     # Nuclei (DAPI)
-            tcell_channel=3,    # T cell marker (CD3)
+            qki_channel=1,      # QKI protein
+            iba1_channel=2,     # Macrophages/microglia marker (IBA1)
             max_workers=4       # Reduced for local testing
         )
         
         # Print results as shown in README
         print(f"\n✓ Analysis complete!")
-        print(f"Found {results['stats']['iba1_count']} microglia")
-        print(f"Found {results['stats']['tcell_count']} T cells")
+        print(f"Found {results['stats']['iba1_count']} IBA1+ cells")
         
     except Exception as e:
         print(f"\n❌ ERROR: Analysis failed!")
@@ -56,10 +52,11 @@ def test_readme_example():
         "stats.csv",
         "all_cells_comprehensive.csv",
         "iba1_cells.csv",
-        "tcells.csv",
         "composite.png",
         "morphology.png",
-        "morphology_pie_chart.png"
+        "morphology_pie_chart.png",
+        "nuclei_properties.csv",
+        "iba1_labeled.png"
     ]
     
     missing = []
@@ -78,6 +75,7 @@ def test_readme_example():
     print(f"\n✅ ALL TESTS PASSED!")
     print(f"   README instructions work correctly")
     print(f"   Results saved in: {output_dir}/")
+    
     return True
 
 if __name__ == "__main__":

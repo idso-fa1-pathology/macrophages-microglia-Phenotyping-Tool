@@ -1,5 +1,0 @@
-Spatial correlation between IBA1+ cells and T cells: 0.2454
-
-Positive values indicate regions where both cell types tend to be found together.
-Negative values indicate regions where the presence of one cell type correlates with the absence of the other.
-Values close to zero indicate little to no spatial relationship.

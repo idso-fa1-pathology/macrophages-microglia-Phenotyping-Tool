@@ -1,9 +1,9 @@
 Analysis parameters for sample_test_image_small.tif:
-Channels: IBA1=2, DAPI=0, QKI=1, T cell=3
-Size filters: IBA1=50-5000, DAPI=15-500, T cell=20-2000
+Channels: IBA1=2, DAPI=0, QKI=1
+Size filters: IBA1=50-5000, DAPI=15-500
 Threshold methods: IBA1=adaptive, DAPI=otsu
-Enhanced detection: IBA1=True, T cell=True
+Enhanced detection: IBA1=True
 Artifact removal: True, threshold=8000
-Intensity filters: IBA1=None-None, T cell=None-None
+Intensity filters: IBA1=None-None
 Tiling parameters: size=2000, overlap=200, workers=4
-Analysis started: 2025-11-05 16:18:03
+Analysis started: 2025-11-07 14:21:56

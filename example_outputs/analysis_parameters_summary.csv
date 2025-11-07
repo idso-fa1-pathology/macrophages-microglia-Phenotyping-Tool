@@ -3,8 +3,6 @@ iba1_min_size,N/A
 iba1_max_size,N/A
 dapi_min_size,N/A
 dapi_max_size,N/A
-tcell_min_size,N/A
-tcell_max_size,N/A
 artifact_area_threshold,8000
 tile_size,N/A
 overlap,N/A
